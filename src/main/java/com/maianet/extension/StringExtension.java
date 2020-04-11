@@ -113,4 +113,21 @@ public class StringExtension {
         return alfa.equals(beta);
     }
     
+    /**
+     * Reverse the string value byte by byte. Example, if input string is 'abc' 
+     * the reverse method returns 'cba'.
+     * @param input Input string.
+     * @return Revers input string.
+     */
+    public static String reverse(String input) {        
+        byte [] strAsByteArray = input.getBytes(); 
+        byte [] result = new byte [strAsByteArray.length]; 
+
+        for (int i = 0; i<strAsByteArray.length; i++) {
+            result[i] = strAsByteArray[strAsByteArray.length-i-1]; 
+        }
+        
+        return new String(result); 
+    }
+    
 }
