@@ -1,10 +1,6 @@
 package com.maianet.calculations;
 
 import com.maianet.calculations.entities.WeightAverageEntity;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Vector;
-
 
 /**
  * Mathematical operations
@@ -195,4 +191,5 @@ public class Math {
         
         return dev / (sqrt2(N));
     }
+    
 }
